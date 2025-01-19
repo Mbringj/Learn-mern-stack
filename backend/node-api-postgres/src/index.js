@@ -16,6 +16,11 @@ const cors = require('cors');
 const app = express();
 const port = 8000;
 
+const corsOptions = {
+  origin: "http://localhost:5173",
+  methods: "POST,PUT,GET,DELETE",
+}
+
 app.use(cors());
 app.use(helmet());
 app.use(bodyParser.json());

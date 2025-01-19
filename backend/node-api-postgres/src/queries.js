@@ -11,17 +11,15 @@ const pool = new Pool({
   port: 5432
 });
 
-const getUsers = (req, res, next) => {
+const getUsers = async (req, res, next) => {
 
-  pool.query("SELECT * FROM users ORDER BY id ASC", (error, results) => {
+  await pool.query("SELECT * FROM users ORDER BY id ASC", (error, results) => {
     if ( error ) {
       throw error
     }
     res.status(200).json(results.rows);
   });
-
-  const error = new Error("Something went wrong");
-  next(error);
+  
 };
 
 const getUserById = (req, res) => {

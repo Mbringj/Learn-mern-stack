@@ -44,6 +44,9 @@ The server will run on `http://localhost:8000`.
 
 The frontend is located in the `client` directory (to be implemented).
 
+## Resources
+()[]
+
 ## License
 
 This project is licensed under the ISC License.
