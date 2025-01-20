@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Createuser from './components/createUser';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -14,6 +15,17 @@ function App() {
         console.log(err);
       })
   }, []);
+
+  const handleCreateUser = (newUser) => {
+    setUsers([...users, newUser]);
+
+    axios
+      .post('http://localhost:8000/users', newUser)
+      .then(response => {
+        console.log('Create user' + response.data);
+      })
+      .catch(error => console.log(error));   
+  }
 
   return (
     <>
@@ -36,6 +48,7 @@ function App() {
               }
             </>
           </table>
+          <Createuser createnewuser={handleCreateUser}/>
       </div>
     </>
   )
