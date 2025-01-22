@@ -42,17 +42,23 @@ function App() {
       });   
   }
 
-  const handleDeleteUser = (id) => {
-    setLoadingActions({ ...loadingActions, [id]: true });
-    axios
-      .delete(`http://localhost:8000/users/${id}`)
+  const handleDeleteUser = async(id) => {
+    const newLoadingActions = { ...loadingActions };
+    newLoadingActions[`delete-${id}`] = true;
+    setLoadingActions(newLoadingActions);
+
+    await new Promise(resolve => setTimeout(resolve, 1000));
+      axios
+        .delete(`http://localhost:8000/users/${id}`)
       .then(() => {
         fetchUsers();
         console.log('Utilisateur supprimé avec succès');
       })
       .catch(error => console.log(error))
       .finally(() => {
-        setLoadingActions({ ...loadingActions, [id]: false });
+        const finalLoadingActions = { ...loadingActions };
+        finalLoadingActions[`delete-${id}`] = false;
+        setLoadingActions(finalLoadingActions);
       });
   }
 
@@ -105,22 +111,18 @@ function App() {
                       <button 
                         className="edit"
                         onClick={() => setEditingUserId(user.id)}
-                        disabled={loadingActions[user.id]}
+                        disabled={loadingActions[`edit-${user.id}`] || loadingActions[`delete-${user.id}`]}
                       >
-                        <div className="button-content">
-                          Éditer
-                          {loadingActions[user.id] && <div className="spinner" />}
-                        </div>
+                        <span>Éditer</span>
+                        {loadingActions[`edit-${user.id}`] && <div className="spinner" />}
                       </button>
                       <button 
                         className="delete"
                         onClick={() => handleDeleteUser(user.id)}
-                        disabled={loadingActions[user.id]}
+                        disabled={loadingActions[`edit-${user.id}`] || loadingActions[`delete-${user.id}`]}
                       >
-                        <div className="button-content">
-                          Supprimer
-                          {loadingActions[user.id] && <div className="spinner" />}
-                        </div>
+                        Supprimer
+                        {loadingActions[`delete-${user.id}`] && <div className="spinner" />}
                       </button>
                     </td>
                   </>

@@ -39,13 +39,13 @@ function EditUser({ user, onSave, onCancel, isLoading }) {
         <button type="submit" className="save" disabled={isLoading}>
           <div className="button-content">
             Sauvegarder
-            {isLoading && <div className="spinner" />}
+            {isLoading && isLoading === 'save' && <div className="spinner" />}
           </div>
         </button>
         <button type="button" className="cancel" onClick={onCancel} disabled={isLoading}>
           <div className="button-content">
             Annuler
-            {isLoading && <div className="spinner" />}
+            {isLoading && isLoading === 'cancel' && <div className="spinner" />}
           </div>
         </button>
       </div>
