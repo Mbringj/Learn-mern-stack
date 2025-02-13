@@ -45,7 +45,7 @@ const CreateUser = ({ createnewuser, isLoading }) => {
       <button type="submit" className="save" disabled={isLoading}>
         <div className="button-content">
           Créer l'utilisateur
-          {isLoading && <div className="spinner" />}
+          {isLoading && <span className="spinner" />}
         </div>
       </button>
     </form>

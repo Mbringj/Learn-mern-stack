@@ -47,7 +47,6 @@ function App() {
     newLoadingActions[`delete-${id}`] = true;
     setLoadingActions(newLoadingActions);
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
       axios
         .delete(`http://localhost:8000/users/${id}`)
       .then(() => {
