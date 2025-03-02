@@ -10,12 +10,20 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
+const logger_middleware_1 = require("./cats/logger.middleware");
+const cats_module_1 = require("./cats/cats.module");
 let AppModule = class AppModule {
+    configure(consumer) {
+        consumer
+            .apply(logger_middleware_1.LoggerMiddleware)
+            .exclude({ path: 'cats', method: common_1.RequestMethod.GET }, { path: 'cats', method: common_1.RequestMethod.POST }, 'cats/{*splat}')
+            .forRoutes('cats');
+    }
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [],
+        imports: [cats_module_1.CatsModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
