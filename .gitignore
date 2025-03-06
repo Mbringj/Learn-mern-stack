@@ -1,3 +1,4 @@
 
 # ignore node modules
 backend/node-api-postgres/node_modules
+*/*/node_modules

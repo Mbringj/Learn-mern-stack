@@ -4,8 +4,24 @@ meta {
   seq: 1
 }
 
-get {
-  url: localhost:3000
-  body: none
+post {
+  url: http://localhost:3000/auth/register
+  body: json
   auth: none
+}
+
+params:query {
+  : 
+}
+
+body:json {
+  {
+    "username": "testuser",
+    "password": "password123"
+  }
+}
+
+body:multipart-form {
+  username: sphincenric
+  password: Divine@127
 }
