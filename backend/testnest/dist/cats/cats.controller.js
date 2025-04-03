@@ -16,6 +16,8 @@ exports.CatsController = void 0;
 const common_1 = require("@nestjs/common");
 const cats_service_1 = require("./cats.service");
 const create_cat_dto_1 = require("./DTO/create-cat.dto");
+const http_exception_filter_1 = require("./filters/http-exception.filter");
+const role_guard_1 = require("./guard/role.guard");
 let CatsController = class CatsController {
     constructor(catsService) {
         this.catsService = catsService;
@@ -33,9 +35,8 @@ let CatsController = class CatsController {
             });
         }
     }
-    findOne(params) {
-        console.log(params.id);
-        return `This actoion returns a ${params.id}`;
+    findOne(id) {
+        return this.catsService.findOne(id);
     }
     create(createCatDto) {
         return 'THis action adds a new cats';
@@ -54,13 +55,14 @@ __decorate([
 ], CatsController.prototype, "findAll", null);
 __decorate([
     (0, common_1.Get)(':id'),
-    __param(0, (0, common_1.Param)()),
+    __param(0, (0, common_1.Param)('id', new common_1.ParseIntPipe({ errorHttpStatusCode: common_1.HttpStatus.NOT_ACCEPTABLE }))),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", String)
+    __metadata("design:paramtypes", [Number]),
+    __metadata("design:returntype", void 0)
 ], CatsController.prototype, "findOne", null);
 __decorate([
     (0, common_1.Post)(),
+    (0, common_1.UseFilters)(new http_exception_filter_1.HttpExceptionFilter()),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_cat_dto_1.CreateCatDto]),
@@ -68,6 +70,7 @@ __decorate([
 ], CatsController.prototype, "create", null);
 exports.CatsController = CatsController = __decorate([
     (0, common_1.Controller)('cats'),
+    (0, common_1.UseGuards)(role_guard_1.RolesGuard),
     __metadata("design:paramtypes", [cats_service_1.CatsService])
 ], CatsController);
 //# sourceMappingURL=cats.controller.js.map

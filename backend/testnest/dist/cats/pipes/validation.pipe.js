@@ -6,24 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CatsService = void 0;
+exports.ValidationPipe = void 0;
 const common_1 = require("@nestjs/common");
-let CatsService = class CatsService {
-    constructor() {
-        this.cats = ['minou', 'patrick minou'];
-    }
-    findOne(id) {
-        throw new Error('Method not implemented.');
-    }
-    findAll() {
-        return this.cats;
-    }
-    create(cat) {
-        this.cats.push(cat);
+let ValidationPipe = class ValidationPipe {
+    transform(value, metadata) {
+        return value;
     }
 };
-exports.CatsService = CatsService;
-exports.CatsService = CatsService = __decorate([
+exports.ValidationPipe = ValidationPipe;
+exports.ValidationPipe = ValidationPipe = __decorate([
     (0, common_1.Injectable)()
-], CatsService);
-//# sourceMappingURL=cats.service.js.map
+], ValidationPipe);
+//# sourceMappingURL=validation.pipe.js.map

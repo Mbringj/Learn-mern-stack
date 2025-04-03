@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import { useReducer } from 'react';
 import MyContextComponent  from "./components/usecontext";
-import Form from "./components/usecallback";
+import { CounterUI, ActionForm} from "./components/useState";
+
 
 interface State {
    count: number
@@ -81,6 +82,8 @@ function App() {
 
   return (
     <>
+      <CounterUI />
+      <ActionForm />
       <div>
         {count}
         <button onClick={() => setCount(count + 1)}>{count}</button>
@@ -115,7 +118,6 @@ function App() {
       <button onClick={addFive}>Ajouter 2</button>
       <button onClick={reset}>Réinitialiser</button>
       <MyContextComponent />
-      <Form />
     </>
   );
 }

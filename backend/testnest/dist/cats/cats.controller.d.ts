@@ -4,6 +4,6 @@ export declare class CatsController {
     private readonly catsService;
     constructor(catsService: CatsService);
     findAll(age: number, breed: string): void;
-    findOne(params: any): string;
+    findOne(id: number): void;
     create(createCatDto: CreateCatDto): string;
 }

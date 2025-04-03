@@ -6,24 +6,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CatsService = void 0;
+exports.HttpExceptionFilter = void 0;
 const common_1 = require("@nestjs/common");
-let CatsService = class CatsService {
-    constructor() {
-        this.cats = ['minou', 'patrick minou'];
-    }
-    findOne(id) {
-        throw new Error('Method not implemented.');
-    }
-    findAll() {
-        return this.cats;
-    }
-    create(cat) {
-        this.cats.push(cat);
+let HttpExceptionFilter = class HttpExceptionFilter {
+    catch(exception, host) {
+        const ctx = host.switchToHttp();
+        const response = ctx.getResponse();
+        const request = ctx.getRequest();
+        const status = exception.getStatus();
+        response.status(status).json({
+            statusCode: status,
+            timestamp: new Date().toISOString(),
+            path: request.url,
+        });
     }
 };
-exports.CatsService = CatsService;
-exports.CatsService = CatsService = __decorate([
-    (0, common_1.Injectable)()
-], CatsService);
-//# sourceMappingURL=cats.service.js.map
+exports.HttpExceptionFilter = HttpExceptionFilter;
+exports.HttpExceptionFilter = HttpExceptionFilter = __decorate([
+    (0, common_1.Catch)(common_1.HttpException)
+], HttpExceptionFilter);
+//# sourceMappingURL=http-exception.filter.js.map
