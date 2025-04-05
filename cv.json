@@ -1,0 +1,105 @@
+{
+  "name": "MBRING JEREMIE",
+  "position": "FullStack Web Developer",
+  "contactInformation": "+237 696988275",
+  "email": "mbringjeremy@gmail.com",
+  "address": "Dougoy, Maroua, Cameroun",
+  "profilePicture": "",
+  "socialMedia": [
+    {
+      "socialMedia": "Github",
+      "link": "github.com/Mbringj"
+    },
+    {
+      "socialMedia": "LinkedIn",
+      "link": "linkedin.com/in/mbring-jeremie"
+    }
+  ],
+  "summary": "Professionnelle dotée de nombreuses années d'expérience dans le développement web, combinées à une solide formation dans le domaine de l'informatique, du réseau informatique et du cloud engineering. Capable à la fois de travailler en équipe et de fonctionner de manière autonome, je fais preuve d'un solide sens de l'organisation et de compétences avérées. Mon expertise englobe également des compétences en gestion des réseaux informatiques, en virtualisation, ainsi qu'en déploiement et gestion des infrastructures cloud.",
+  "education": [
+    {
+      "school": "Ecole Nationale Superieure Polytechnique de Maroua",
+      "degree": "Licence Informatique en Securite et d'administration Reseaux",
+      "startYear": "2018-09-01",
+      "endYear": "2022-07-01"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "S-INTEL SERVICE SARL",
+      "position": "Stagiaire Technicien Réseaux et Instructeur",
+      "description": "Gestion et optimisation des campagnes publicitaires sur les réseaux sociaux. Création de contenu visuel et rédactionnel engageant. Instructeur des élèves et étudiants qui souhaitent acquérir des compétences dans les TIC. Prestation de service pour des clients.",
+      "keyAchievements": "Mise en place d'un système Voice-Ip sur un réseau local\nCréation du réseau social de l'entreprise sur Facebook\nInstallation et configuration des postes de travail pour les sessions de formation",
+      "startYear": "2022-06-01",
+      "endYear": "2024-05-01"
+    },
+    {
+      "company": "TIMER DIGITECH SARL",
+      "position": "Junior FullStack Web Developer & DevOps",
+      "description": "Développement d'interfaces utilisateur conformes aux maquettes fournies, avec un accent sur l'ergonomie et la compatibilité multi-navigateurs. Création d'API RESTful performantes pour interconnecter les services web et applications mobiles. Mise en place et automatisation des pipelines CI/CD sur Git Action et jenkins, garantissant des déploiements fiables et continus. Gestion des environnements de production et de test, assurant la disponibilité des applications 24/7.",
+      "keyAchievements": "Développement de Bots de Marketing pour l'engagement client\nCréation de plateformes e-learning personnalisées\nDéveloppement du site corporate timerdigitech.com",
+      "startYear": "2020-06-01",
+      "endYear": "2020-09-01"
+    },
+    {
+      "company": "DJAMAARE SERVICE SARL",
+      "position": "Stagiaire Assistant Support Technique",
+      "description": "Diagnostic des problèmes matériels et logiciels rencontrés par les utilisateurs, avec une résolution rapide pour minimiser les interruptions. Maintenance proactive des équipements informatiques, incluant le remplacement et l'upgrade des composants. Documentation rigoureuse des procédures et solutions, facilitant la formation des nouveaux techniciens. Assistance lors de la configuration d'un réseau local complet, intégrant la gestion des accès et la sécurisation des données.",
+      "keyAchievements": "Conception et déploiement d'un réseau local sécurisé et évolutif pour l'entreprise\nDocumentation complète des procédures et création de guides utilisateurs",
+      "startYear": "2019-06-01",
+      "endYear": "2019-09-01"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Civica",
+      "description": "Plateforme d'information civile visant à améliorer l'accès aux informations administratives pour les citoyens. Le projet incluait la mise en place d'un système de gestion des documents civils et la création d'une interface conviviale pour les utilisateurs.",
+      "keyAchievements": "Contribution majeure au backend et à l'intégration avec des bases de données sécurisées\nDéveloppement d'une solution numérique pour améliorer l'accès à l'information administrative",
+      "startYear": "2024-05-06",
+      "endYear": "2024-05-11",
+      "link": ""
+    },
+    {
+      "name": "Djamou",
+      "description": "Développement d'une application web sécurisée permettant la gestion des dossiers médicaux des patients. L'objectif était de centraliser les informations médicales pour une meilleure accessibilité par les professionnels de santé et les patients.",
+      "keyAchievements": "Implémentation des modules de connexion utilisateur, visualisation des données et suivi médical en temps réel\nCentralisation des informations médicales pour améliorer l'accessibilité",
+      "startYear": "2023-12-03",
+      "endYear": "2023-12-09",
+      "link": ""
+    }
+  ],
+  "skills": [
+    {
+      "title": "Technical Skills",
+      "skills": ["Express.js", "React.js", "Nest.js", "HTML", "CSS", "JavaScript", "Node.js", "Python", "MongoDB", "MySQL", "AWS S3", "AWS EC2", "GitHub Actions", "Docker", "Docker Compose", "Linux (Ubuntu Server, Redhat)", "Windows Server"]
+    },
+    {
+      "title": "Soft Skills",
+      "skills": ["Capacité d'analyse", "Organisation", "Synthèse", "Travail en équipe", "Initiative", "Résistance au travail sous pression"]
+    }
+  ],
+  "languages": ["Français", "Anglais"],
+  "certifications": [],
+  "references": [
+    {
+      "name": "Ing Jules Kevin",
+      "position": "Fondateur Timer Digitech",
+      "contact": "+237 6588 49384"
+    },
+    {
+      "name": "M. Issac",
+      "position": "Comptable DJAAMARE SERVICE SARL",
+      "contact": "+237 696048481"
+    },
+    {
+      "name": "M. TAIRA MANUEL DESIRE",
+      "position": "Digital transformer chez GIZ cameroun",
+      "contact": "+237690996669"
+    },
+    {
+      "name": "M. Ibrahim Ahmadou",
+      "position": "Fondateur & CEO",
+      "contact": "+237 694128814"
+    }
+  ]
+}
