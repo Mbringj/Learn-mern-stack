@@ -1,0 +1,134 @@
+{
+  "name": "MBRING JEREMIE",
+  "position": "FullStack Web Developer",
+  "contactInformation": "(237) 696988275",
+  "email": "mbringjeremy@gmail.com",
+  "address": "Dougoy, Maroua, Cameroun",
+  "profilePicture": "",
+  "socialMedia": [
+    {
+      "socialMedia": "Github",
+      "link": "github.com/Mbringj"
+    },
+    {
+      "socialMedia": "LinkedIn",
+      "link": "linkedin.com/in/mbring-jeremie"
+    }
+  ],
+  "summary": "Professionnelle dotée de nombreuses années d'expérience dans le développement web, combinées à une solide formation dans le domaine de l'informatique, du réseau informatique et du cloud engineering. Capable à la fois de travailler en équipe et de fonctionner de manière autonome, je fais preuve d'un solide sens de l'organisation et de compétences avérées. Mon expertise englobe également des compétences en gestion des réseaux informatiques, en virtualisation, ainsi qu'en déploiement et gestion des infrastructures cloud.",
+  "education": [
+    {
+      "school": "Licence Informatique en Securite et d'administration Reseaux",
+      "degree": "Ecole Nationale Superieure Polytechnique de Maroua",
+      "startYear": "2018-01-01",
+      "endYear": "2022-12-31"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "S-INTEL SERVICE SARL",
+      "position": "Stagiaire Technicien Réseaux et Instructeur",
+      "description": "Formation et gestion des réseaux pour une entreprise de services informatiques.",
+      "keyAchievements": "Gestion et optimisation des campagnes publicitaires sur les réseaux sociaux.\nCréation de contenu visuel et rédactionnel engageant.\nInstructeur des élèves et étudiants qui souhaitent acquérir des compétences dans les TIC.\nPrestation de service pour des clients.\nMise en place d'un système Voice-IP sur un réseau local.\nCréation du réseau social de l'entreprise sur Facebook.\nInstallation et configuration des postes de travail pour les sessions de formation.\nDocumentation complète des procédures et création de guides utilisateurs pour faciliter l'apprentissage.",
+      "startYear": "2022-06-01",
+      "endYear": "2024-05-31"
+    },
+    {
+      "company": "TIMER DIGITECH SARL",
+      "position": "Junior FullStack Web Developer & DevOps",
+      "description": "Développement web full stack et mise en place d'infrastructures DevOps.",
+      "keyAchievements": "Développement d'interfaces utilisateur conformes aux maquettes fournies, avec un accent sur l'ergonomie et la compatibilité multi-navigateurs.\nCréation d'API RESTful performantes pour interconnecter les services web et applications mobiles.\nMise en place et automatisation des pipelines CI/CD sur Git Action et Jenkins, garantissant des déploiements fiables et continus.\nGestion des environnements de production et de test, assurant la disponibilité des applications 24/7.\nProjets majeurs : Bots de Marketing pour l'engagement client, plateformes e-learning personnalisées, et développement du site corporate timerdigitech.com.\nCompétences clés : HTML, CSS, JavaScript, MongoDB, MySQL, GitHub Actions, Node.js.",
+      "startYear": "2020-06-01",
+      "endYear": "2020-09-30"
+    },
+    {
+      "company": "DJAMAARE SERVICE SARL",
+      "position": "Stagiaire Assistant Support Technique",
+      "description": "Support technique et gestion réseau pour une entreprise de services.",
+      "keyAchievements": "Diagnostic des problèmes matériels et logiciels rencontrés par les utilisateurs, avec une résolution rapide pour minimiser les interruptions.\nMaintenance proactive des équipements informatiques, incluant le remplacement et l'upgrade des composants.\nDocumentation rigoureuse des procédures et solutions, facilitant la formation des nouveaux techniciens.\nAssistance lors de la configuration d'un réseau local complet, intégrant la gestion des accès et la sécurisation des données.\nProjet réalisé : Conception et déploiement d'un réseau local sécurisé et évolutif pour l'entreprise, adapté aux besoins de son activité.",
+      "startYear": "2019-06-01",
+      "endYear": "2019-09-30"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Plateforme d'information civile (Civica)",
+      "description": "Hackathon GIZ GRAND NORD - Projet PADGOF. Conception et déploiement d'une solution numérique visant à améliorer l'accès aux informations administratives pour les citoyens. Le projet incluait la mise en place d'un système de gestion des documents civils et la création d'une interface conviviale pour les utilisateurs. Contribution majeure au backend et à l'intégration avec des bases de données sécurisées.",
+      "date": "2024-12-03 - 2024-12-09"
+    },
+    {
+      "title": "Carnet médical centralisé (Djamou)",
+      "description": "Hackathon Journée Digital Sahel. Développement d'une application web sécurisée permettant la gestion des dossiers médicaux des patients. L'objectif était de centraliser les informations médicales pour une meilleure accessibilité par les professionnels de santé et les patients. Implémentation des modules de connexion utilisateur, visualisation des données et suivi médical en temps réel.",
+      "date": "2024-05-06 - 2024-05-11"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Technical Skills",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "React.js",
+        "NestJS",
+        "Python",
+        "MongoDB",
+        "MySQL",
+        "GitHub Actions",
+        "Docker",
+        "Docker Compose",
+        "AWS S3",
+        "AWS EC2",
+        "Linux (Ubuntu Server, Redhat)",
+        "Windows Server 2016/2019"
+      ]
+    },
+    {
+      "title": "Soft Skills",
+      "skills": [
+        "Travail en équipe",
+        "Organisation",
+        "Analyse et synthèse",
+        "Initiative",
+        "Gestion du temps",
+        "Résistance au travail sous pression",
+        "Capacité d'apprentissage"
+      ]
+    },
+    {
+      "title": "Additional Skills",
+      "skills": [
+        "Formation et instruction",
+        "Documentation technique",
+        "Gestion de projet",
+        "Administration système",
+        "Sécurité informatique",
+        "Déploiement CI/CD"
+      ]
+    }
+  ],
+  "languages": [
+    "Français (parfaitement)",
+    "Anglais (Courant)"
+  ],
+  "certifications": [],
+  "references": [
+    {
+      "name": "Ing Jules Kevin",
+      "position": "Fondateur Timer Digitech",
+      "contact": "+237 6588 49384"
+    },
+    {
+      "name": "M. Isaac",
+      "position": "Comptable DJAAMARE SERVICE SARL",
+      "contact": "+237 696048481"
+    },
+    {
+      "name": "M. TAIRA MANUEL DESIRE",
+      "position": "Digital transformer chez GIZ cameroun",
+      "contact": "+237 690996669"
+    }
+  ]
+}
