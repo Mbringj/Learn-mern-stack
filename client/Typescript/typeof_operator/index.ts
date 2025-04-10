@@ -52,3 +52,11 @@ const MyArray = [
 
 type MyArrayType = typeof MyArray[number];
 
+type Ages = typeof MyArray[number]["age"]; // number
+
+type Age2 = Person["age"]; // number
+
+// Nous pouvons également utiliser typeof pour capturer le type d'une fonction.
+
+type key = "age";
+type Age = Person[key];
